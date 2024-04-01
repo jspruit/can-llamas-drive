@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "can_llamas_drive"
+version = "1.0"
+requires-python = ">=3.10"
+description = "Llamas crashing into things"
+authors = [
+    {name = "John Spruit"}
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    "llama_cpp_python==0.2.39",
+    "numpy==1.26.4",
+    "opencv-python==4.9.0.80",
+]
+
+[tool.setuptools]
+py-modules = ["can_llamas_drive"]
